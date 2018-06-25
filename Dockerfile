@@ -4,9 +4,9 @@ RUN npm install --production --loglevel warn -g eslint eslint-config-standard es
 
 COPY ./scripts /home/node
 
-RUN chmod +x ./*.sh
-
 WORKDIR /home/node
+
+RUN chmod +x ./*.sh
 
 CMD ["/bin/bash"]
 
