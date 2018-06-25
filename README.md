@@ -14,7 +14,7 @@ docker run -it --rm -v $(pwd):/home/node 1drop/node-docker-utils bash -s < ./ci/
 ```yaml
 lint:js:
   stage: lint
-  image: 1drop/npm:shopware-lint
+  image: 1drop/node-docker-utils:8
   script:
     - bash -s < ./ci/eslint.sh
 ```
