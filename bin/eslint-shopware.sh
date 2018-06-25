@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
-$SHOPWARE_FOLDER = 'app/shopware'
-
-cd $SHOPWARE_FOLDER
+cd /home/node/app/shopware
 
 # CUSTOM PLUGINS
 if [[ -n $(find custom/plugins/Od*/**/ -name '*.js') ]]; then
