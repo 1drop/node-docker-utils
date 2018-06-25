@@ -6,7 +6,7 @@
 
 
 ``` bash
-docker run -it --rm -v $(pwd):/home/node 1drop/node-docker-utils bash -s < ./ci/eslint.sh
+docker run -i --rm -v $(pwd):/home/node 1drop/node-docker-utils ./eslint-shopware.sh
 ```
 
 ### gitlab-ci
@@ -16,5 +16,5 @@ lint:js:
   stage: lint
   image: 1drop/node-docker-utils:8
   script:
-    - bash -s < ./ci/eslint.sh
+    - ./eslint-shopware.sh
 ```
