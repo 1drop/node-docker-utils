@@ -11,7 +11,7 @@ RUN npm install --production --loglevel warn -g \
     eslint-plugin-node@latest \
 
     # Stylelint
-    stylelint
+    stylelint \
     > /dev/null
 
 WORKDIR /home/node
