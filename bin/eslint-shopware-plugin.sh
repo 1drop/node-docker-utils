@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd /home/node/
+cd $HOME
 
 if [[ -n $(find ./**/ -name '*.js') ]]; then
     echo "linting js files";
