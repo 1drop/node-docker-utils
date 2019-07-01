@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd /home/node/
+cd $HOME
 
 if [[ -n $(find ./**/ -name '*.less') ]]; then
     echo "linting less files";
