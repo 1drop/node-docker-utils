@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd $HOME
+cd $CI_PROJECT_DIR
 
 if [[ -n $(find ./**/ -name '*.less') ]]; then
     echo "linting less files";

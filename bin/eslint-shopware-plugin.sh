@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd $HOME
+cd $CI_PROJECT_DIR
 
 if [[ -n $(find ./**/ -name '*.js') ]]; then
     echo "linting js files";

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd $HOME/app/shopware
+cd $CI_PROJECT_DIR/app/shopware
 
 # CUSTOM PLUGINS
 if [[ -n $(find custom/plugins/Od*/**/ -name '*.js') ]]; then
